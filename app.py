@@ -8,7 +8,7 @@ import torchvision.transforms as transforms
 
 app =Flask(__name__)
 ALLOWED_EXTENSION = {'jpg','jpeg'}
-model = models.vgg16(weights='imagenet')#models.vgg16(pretrained =True)
+model = models.vgg16( weights='IMAGENET1K_V1')#models.vgg16(pretrained =True)
 image_index=json.load(open('./imagenet_class_index.json'))
 
 def allowed_file(filename):
