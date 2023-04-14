@@ -1,0 +1,21 @@
+{
+        "name": "CV_project_1",
+        "version": "1.0.0",
+        "description": "",
+        "scripts": {
+            "build": "echo \"No build specified\" && exit 1",
+            "test": "echo \"No test specified\" && exit 1",
+            "start": "python main.app"
+        },
+        "repository": {
+            "type": "git",
+            "url": "git+https://github.com/Ghadeer-Issa92/CV_project_1.git"
+        },
+        "author": "",
+        "license": "ISC",
+        "bugs": {
+            "url": "https://github.com/Ghadeer-Issa92/CV_project_1/issues"
+        },
+        "homepage": "https://github.com/Ghadeer-Issa92/CV_project_1#readme"
+    }
+     
