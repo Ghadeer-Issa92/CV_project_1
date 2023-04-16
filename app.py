@@ -4,9 +4,10 @@ import json
 from PIL import Image
 from torchvision import models
 import torchvision.transforms as transforms 
-
+from flask_ngrok import run_with_ngrok
 
 app =Flask(__name__)
+run_with_ngrok(app)
 ALLOWED_EXTENSION = {'jpg','jpeg'}
 model = models.vgg16( weights='IMAGENET1K_V1')#models.vgg16(pretrained =True)
 image_index=json.load(open('./imagenet_class_index.json'))
