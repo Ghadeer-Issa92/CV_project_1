@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+
+    <title>Image Classification</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      .image-container {
+        margin: 20px;
+      }
+
+      #image-preview {
+        max-width: 500px;
+        max-height: 500px;
+        margin-bottom: 10px;
+      }
+
+       #prediction-result {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+    <h1>Image Classification</h1>
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file"  name="file">
+      <button type="submit" id="submit-button">Submit</button>
+    </form>
+    {% if img_data %}
+      <h2>Prediction:</h2>
+      <p>Class ID: {{ class_id }}</p>
+      <p>Class Name: {{ class_name }}</p>
+      <img id="image-preview"  src="data:image/jpeg;base64,{{ img_data }}" alt="Image">
+    {% endif %}
+  </body>
+</html>

@@ -1,0 +1,5 @@
+Flask==2.2.3
+flask_ngrok==0.0.25
+Pillow==9.0.1
+Pillow==9.5.0
+torchvision==0.15.1
